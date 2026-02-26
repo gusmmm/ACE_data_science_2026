@@ -6,4 +6,4 @@ This is a demo github repo to practice the contents of the ACE course Data Scien
 - The practice datasets are the `mimic.demo`and `eicu.demo`datasets from the `ricu`R package
 
 # Guides
-- [Install R in Ubuntu 24.04](Guides/Install%20R%20in%20ubuntu%2024.04.mdInstall R in ubuntu 24.04.md)
+- [Install R in Ubuntu 24.04](Guides/Install%20R%20in%20ubuntu%2024.04.md)
