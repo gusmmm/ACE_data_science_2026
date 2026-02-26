@@ -19,15 +19,23 @@ if (!file.exists("renv.lock")) {
 # We use suppressWarnings so it doesn't complain if they are already installed
 suppressWarnings(install.packages(c("jsonlite", "pak")))
 
-# 4. Define our Clinical Data Science Stack
+# 4. Define our Clinical Data Science Stack AND Data Packages
 icu_packages <- c(
   "tidyverse",    
   "targets",      
   "tarchetypes",  
   "ricu",         
   "here",         
-  "fs"            
+  "fs",
+  "mimic.demo",   # Add the MIMIC demo data package
+  "eicu.demo"     # Add the eICU demo data package
 )
+
+# Tell R to look at the custom PhysioNet repository in addition to the standard CRAN
+options(repos = c(
+  CRAN = "https://cloud.r-project.org",
+  PhysioNet = "https://eth-mds.github.io/physionet-demo"
+))
 
 # 5. Install the stack using pak 
 pak::pkg_install(icu_packages)
