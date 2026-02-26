@@ -14,16 +14,14 @@ pull_mimic_cohort <- function() {
   # Tell the user what is happening
   message("Extracting clinical data from MIMIC Demo...")
   
-  # load_wide() is a brilliant ricu function that pulls multiple concepts 
-  # and formats them into a standard, easy-to-read clinical spreadsheet.
-  # We will pull:
-  # - 'age': Patient age at admission
-  # - 'los_icu': Intensive Care Unit Length of Stay
-  # - 'lact': Lactate levels (which we know is highly predictive of outcomes)
+  # load_concepts() pulls multiple concepts and returns them as a list of
+  # id_tbl objects, one per concept. merge = TRUE combines them into a
+  # single wide table.
   
-  raw_cohort <- load_wide(
+  raw_cohort <- load_concepts(
     c("age", "los_icu", "lact"), 
-    src = "mimic_demo"
+    src = "mimic_demo",
+    merge = TRUE
   )
   
   # Return the extracted dataframe

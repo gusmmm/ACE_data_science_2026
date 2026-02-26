@@ -1,0 +1,8 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|4319f41e5cf50219
+pull_mimic_cohort|function|a7b4e14f906216ae
+clean_mimic_data|function|cb7759d3409b3f4d
+export_clean_data|function|dbd78c7dede1366a
+raw_data|stem|2360a87574ad8697|fbb77fda5cb4719e|b81e1c8d0f60dc84|-1101284392||t20510.691270179s|s4887b|4887|rds|local|vector|||2.185||
+cleaned_data|stem|8a05dad5ce621654|bd925cda8b57a0cc|528d174905ec8446|630830729||t20510.6912711214s|s4279b|4279|rds|local|vector|||0.018||
+exported_csv|stem|fc912831612204b4|0e16bebb53b6ff42|b0e1a2da8d4c4b12|-354447417|/home/gusmmm/data_science_projects/ACE_data_science_2026/icu_mimic_project/data/cleaned_mimic.csv|t20510.6912726443s|s25144b|25144|file|local|vector|||0.069||
